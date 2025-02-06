@@ -1,0 +1,63 @@
+[debug] [2025-02-05T12:24:57.478Z] ----------------------------------------------------------------------
+[debug] [2025-02-05T12:24:57.479Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2025-02-05T12:24:57.479Z] CLI Version:   13.29.3
+[debug] [2025-02-05T12:24:57.479Z] Platform:      darwin
+[debug] [2025-02-05T12:24:57.479Z] Node Version:  v22.11.0
+[debug] [2025-02-05T12:24:57.480Z] Time:          Wed Feb 05 2025 17:54:57 GMT+0530 (India Standard Time)
+[debug] [2025-02-05T12:24:57.480Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-05T12:24:57.481Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-02-05T12:24:57.500Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-05T12:24:57.500Z] > authorizing via signed-in user (induwareedesilva0830@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/induwareedesilva/Desktop/Track-Ease
+
+[debug] [2025-02-05T12:24:58.132Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-02-05T12:24:58.132Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-05T12:26:12.899Z] Checked if tokens are valid: false, expires at: 1738490672448
+[debug] [2025-02-05T12:26:12.900Z] Checked if tokens are valid: false, expires at: 1738490672448
+[debug] [2025-02-05T12:26:12.900Z] > refreshing access token with scopes: []
+[debug] [2025-02-05T12:26:12.901Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-05T12:26:12.901Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-05T12:26:13.233Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-02-05T12:26:13.233Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-05T12:26:13.271Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-02-05T12:26:14.431Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-02-05T12:26:14.432Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project dosematrix-23902 (DoseMatrix) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-02-05T12:26:14.456Z] Checked if tokens are valid: true, expires at: 1738761972233
+[debug] [2025-02-05T12:26:14.456Z] Checked if tokens are valid: true, expires at: 1738761972233
+[debug] [2025-02-05T12:26:14.456Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/dosematrix-23902/billingInfo [none]
+[debug] [2025-02-05T12:26:15.933Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/dosematrix-23902/billingInfo 200
+[debug] [2025-02-05T12:26:15.933Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/dosematrix-23902/billingInfo {"name":"projects/dosematrix-23902/billingInfo","projectId":"dosematrix-23902","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-02-05T12:26:15.934Z] Checked if tokens are valid: true, expires at: 1738761972233
+[debug] [2025-02-05T12:26:15.934Z] Checked if tokens are valid: true, expires at: 1738761972233
+[debug] [2025-02-05T12:26:15.935Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dosematrix-23902/services/sqladmin.googleapis.com [none]
+[debug] [2025-02-05T12:26:15.935Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dosematrix-23902/services/sqladmin.googleapis.com x-goog-quota-user=projects/dosematrix-23902
+[debug] [2025-02-05T12:26:18.026Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dosematrix-23902/services/sqladmin.googleapis.com 200
+[debug] [2025-02-05T12:26:18.026Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dosematrix-23902/services/sqladmin.googleapis.com [omitted]
+[warn] ⚠  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-02-05T12:26:18.027Z] Checked if tokens are valid: true, expires at: 1738761972233
+[debug] [2025-02-05T12:26:18.027Z] Checked if tokens are valid: true, expires at: 1738761972233
+[debug] [2025-02-05T12:26:18.027Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/dosematrix-23902/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-02-05T12:26:18.027Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/dosematrix-23902/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/dosematrix-23902
+[debug] [2025-02-05T12:26:18.627Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/dosematrix-23902/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-02-05T12:26:18.628Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/dosematrix-23902/services/sqladmin.googleapis.com:enable [omitted]
